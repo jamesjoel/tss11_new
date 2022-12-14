@@ -1,0 +1,23 @@
+h1{
+    color : blue;
+    font-size: 50px;
+}
+#abc{
+    background-color: #785451;
+    font-size: 20px;
+}
+.xyz x{
+    background-color: #CD084A;
+    font-size: 25px;
+}
+#xyz2{
+    background-color: #ACDC10;
+    font-size: 25px;
+}
+
+input{
+    background-color: blue;
+}
+body{
+    background-color: rgb(96, 12, 106);
+}
