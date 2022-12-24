@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Edit Student</h1>
+        
+        <a href="/list">List</a>
+        <form action="/edit" method="post">
+            <input type="hidden" value="<%= prop._id %>" name="id"/>
+            Full Name : <input value="<%= prop.name %>" type="text" name="name"/>
+            <Br />
+            <Br />
+            Fee : <input value="<%= prop.fee %>" type="text" name="fee"/>
+            <br />
+            <br />
+            City : <select name="city">
+                <option>Select</option>
+                <option <% if(prop.city=='Indore'){ %> selected  <% } %>>Indore</option>
+                <option <% if(prop.city=='Mumbai'){ %> selected <%} %>>Mumbai</option>
+                <option <% if(prop.city=='Pune') { %> selected <% } %>>Pune</option>
+            </select>
+            <br />
+            <br />
+            <input type="submit" value="Update" />
+        </form>
+    </body>
+</html>
